@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url(../fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'Bebas';
+    src: url(../fontes/BebasNeue-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --verde-claro: #95ebd6;
+    --verde-normal:#28b870;
+    --verde-transparente:#26d885a9; 
+    --verde-escuro: #003b24;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, Sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'idroid', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(223, 219, 182);
+    font-family: var(--fonte-padrao);
+    margin: 0px;
+    padding: 0px;
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
+}
+
+header{
+    background-image: linear-gradient(to top, var(--verde-escuro), var(--verde-normal));
+    text-shadow: 1px 1px 2px #00000075;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1{
+    color: white; 
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px #00000075;
+    margin-bottom: 20px;
+}
+
+header > p{
+    color: white;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 0px #00000075;
+    max-width: 600px;
+    margin: auto;
+    padding: 0px 10px 50px 10px;
+}
+
+nav{
+    background-color: var(--verde-escuro);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.233);
+}
+
+nav > a{
+    color: var(--verde-claro);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: var(--verde-transparente);
+    color: var(--verde-escuro);
+}
+
+main{
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-radius: 0px 0px 10px 10px;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    padding: 20px 20px 20px 20px;
+}
+
+main p {
+    text-align: justify;
+    font-size: 1em;
+    text-indent: 30px;
+    line-height: 2em;
+    margin: 15px 0px;
+}
+
+main strong{
+    color: #17643e;
+}
+
+main a {
+    text-decoration: none;
+    color: #1a442f;
+    font-weight: bold;
+    background-color: var(--verde-claro);
+    padding: 2px 5px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--verde-normal);
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main h1{
+    color: var(--verde-escuro);
+    font-family: var(--fonte-android);
+    font-size: 1.8em;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+main h2{
+    color: #005534;
+    background-image: linear-gradient(to right, #87dfab, white);
+    font-family: var(--fonte-android);
+    font-size: 1.3em;
+    font-weight: normal;
+    margin-top: 15px;
+    text-indent: 8px;
+}
+
+div.video{
+    background-color: var(--verde-escuro);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--verde-claro);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+aside h3 {
+    background-color: var(--verde-escuro);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside a{
+    text-decoration: none;
+    color: #17643e;
+    font-weight: bold;
+}
+
+aside strong{
+    color: #17643e;
+}
+
+footer{
+    background-color: var(--verde-escuro);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 6px;
+    margin-top: 40px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--verde-normal);
+}
